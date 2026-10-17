@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मोरक ग्राम पंचायत चुनाव 2026 | अभिषेक श्रृंगी</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hindi-title { font-family: 'Rozha One', serif; }
+        .tricolor-bar { background: linear-gradient(90deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%); }
+        /* Prevent iOS input zoom */
+        input, select, textarea { font-size: 16px !important; }
+        .concern-label { min-height: 48px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Hidden Iframe using off-screen positioning for iOS/Desktop browser compatibility -->
+    <iframe name="hidden_iframe" 
+            id="hidden_iframe" 
+            style="width:0; height:0; border:0; position:absolute; left:-9999px;" 
+            onload="onIframeLoad()">
+    </iframe>
+
+    <!-- Top Tricolor Banner -->
+    <div class="h-2 w-full tricolor-bar"></div>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-sky-900 via-blue-900 to-indigo-900 text-white shadow-xl py-5 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+                <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left w-full md:w-auto">
+                    <img src="congress.png" alt="INC Congress Symbol" class="w-16 h-16 object-contain drop-shadow-lg flex-shrink-0">
+                    <div>
+                        <span class="bg-sky-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-2">
+                            कांग्रेस पार्टी समर्थित जन घोषणा-पत्र 2026
+                        </span>
+                        <h1 class="hindi-title text-2xl sm:text-3xl md:text-4xl text-amber-300 tracking-wide leading-tight">
+                            पंचायत समिति चेचट, वार्ड 11 <br>ग्राम पंचायत चुनाव 2026
+                        </h1>
+                        <p class="text-slate-300 mt-1 text-xs sm:text-sm">विकास, पारदर्शिता और जनसहभागिता का संकल्प</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 px-5 py-4 rounded-2xl text-center shadow-inner flex-shrink-0 w-full sm:w-auto">
+                    <img src="AbhishekJi.jpeg" alt="अभिषेक श्रृंगी" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-amber-400 shadow-lg mx-auto">
+                    <div class="text-amber-300 font-bold text-base sm:text-lg mt-2">अभिषेक श्रृंगी</div>
+                    <div class="inline-flex items-center justify-center gap-2 mt-2 px-3 py-2 rounded-full bg-white/10 border border-white/20 text-slate-200 text-xs sm:text-sm">
+    <i class="fa-solid fa-phone text-amber-300"></i>
+    <span class="font-medium tracking-wide">मो. नं.</span>
+    <a href="tel:6376451138" class="text-white font-semibold tracking-wider hover:text-amber-300 transition">
+        6376451138
+    </a>
+</div>
+                    <div class="text-xs text-slate-300 uppercase tracking-widest mt-0.5">युवा एवं ऊर्जावान उम्मीदवार</div>
+                    <div class="text-xs text-sky-200 mt-1">
+                        <i class="fa-solid fa-location-dot mr-1"></i> गाँव: मोरक, चौसला
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-2xl mx-auto px-3 sm:px-4 py-6 flex-grow w-full">
+
+        <!-- Intro Card -->
+        <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-6 mb-5">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">आपकी आवाज़, आपका घोषणा-पत्र</h2>
+                    <p class="text-xs sm:text-sm text-slate-500">विकास के लिए अपने सुझाव सीधे साझा करें।</p>
+                </div>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                ग्राम पंचायत के समग्र विकास को नई दिशा देने के लिए अभिषेक श्रृंगी के नेतृत्व में जन घोषणा-पत्र तैयार किया जा रहा है। नीचे दिए गए प्रमुख मुद्दों में अपनी पसंद चुनें या अपना नया सुझाव दर्ज करें।
+            </p>
+        </div>
+
+        <!-- Suggestion Form -->
+        <form id="manifestoForm"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSf1VXjnfYIQ1H7BrqOzmf04ClEzLkaM_W1lnQ46v8vyXTgodg/formResponse"
+              method="POST"
+              target="hidden_iframe"
+              onsubmit="onFormSubmit()"
+              class="bg-white rounded-2xl shadow-md border border-slate-100 p-4 sm:p-6 space-y-5">
+
+            <!-- Name + Phone -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">आपका नाम*</label>
+                    <input type="text" name="entry.20610670" required placeholder="अपना पूरा नाम लिखें"
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">मोबाइल नंबर</label>
+                    <input type="tel" name="entry.2355099" pattern="[0-9]{10}" placeholder="10-अंकों का नंबर (वैकल्पिक)"
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                </div>
+            </div>
+
+            <!-- Ward -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">वार्ड नंबर*</label>
+                <select name="entry.791713171" required
+                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none bg-white">
+                    <option value="" disabled>वार्ड चुनें</option>
+                    <option value="वार्ड 10">वार्ड 1</option>
+                    <option value="वार्ड 2">वार्ड 2</option>
+                    <option value="वार्ड 3">वार्ड 3</option>
+                    <option value="वार्ड 4">वार्ड 4</option>
+                    <option value="वार्ड 5">वार्ड 5</option>
+                    <option value="वार्ड 6">वार्ड 6</option>
+                    <option value="वार्ड 7">वार्ड 7</option>
+                    <option value="वार्ड 8">वार्ड 8</option>
+                    <option value="वार्ड 9">वार्ड 9</option>
+                    <option value="वार्ड 10">वार्ड 10</option>
+                    <option value="वार्ड 11" selected>वार्ड 11</option>
+                    <option value="वार्ड 12">वार्ड 12</option>
+                    <option value="वार्ड 13">वार्ड 13</option>
+                    <option value="वार्ड 14">वार्ड 14</option>
+                    <option value="वार्ड 15">वार्ड 15</option>
+                    <option value="वार्ड 16">वार्ड 16</option>
+                    <option value="वार्ड 17">वार्ड 17</option>
+                    <option value="वार्ड 18">वार्ड 18</option>
+                    <option value="वार्ड 19">वार्ड 19</option>
+                    <option value="वार्ड 20">वार्ड 20</option>
+                    <option value="वार्ड 21">वार्ड 21</option>
+                    <option value="वार्ड 22">वार्ड 22</option>
+                    <option value="वार्ड 23">वार्ड 23</option>
+                    <option value="वार्ड 24">वार्ड 24</option>
+                    <option value="वार्ड 25">वार्ड 25</option>
+                    <option value="अन्य / ग्रामीण क्षेत्र">अन्य / ग्रामीण क्षेत्र</option>
+                </select>
+            </div>
+
+            <hr class="border-slate-100">
+
+            <!-- Checkboxes -->
+            <div>
+                <p class="text-sm font-bold text-slate-900 mb-3">
+                    <i class="fa-solid fa-list-check text-sky-600 mr-2"></i>प्रमुख मुद्दे चुनें (एक से अधिक):
+                </p>
+                <div class="space-y-2">
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="युवाओं के लिए रोजगार एवं स्वरोजगार के अवसर।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">युवाओं के लिए रोजगार एवं स्वरोजगार के अवसर।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="सरकारी स्कूलों का अपग्रेडेशन, बुनियादी सुविधाओं की उपलब्धता एवं शिक्षकों की कमी दूर करना।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">सरकारी स्कूलों का अपग्रेडेशन, बुनियादी सुविधाओं की उपलब्धता एवं शिक्षकों की कमी दूर करना।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="खेतों तक जाने वाले सार्वजनिक रास्तों का विकास, मरम्मत एवं अतिक्रमण संबंधी शिकायतों का समाधान।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">खेतों तक जाने वाले सार्वजनिक रास्तों का विकास, मरम्मत एवं अतिक्रमण संबंधी शिकायतों का समाधान।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="सिंचाई एवं जल सुविधाओं में सुधार, नहर, नाली और सार्वजनिक जलस्रोतों से जुड़ी समस्याओं का समाधान।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">सिंचाई एवं जल सुविधाओं में सुधार, नहर, नाली और सार्वजनिक जलस्रोतों से जुड़ी समस्याओं का समाधान।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="किसानों को सरकारी योजनाओं का लाभ, आवेदन में सहायता एवं लंबित आवेदनों की शिकायतों का निवारण।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">किसानों को सरकारी योजनाओं का लाभ, आवेदन में सहायता एवं लंबित आवेदनों की शिकायतों का निवारण।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="फसल खराबे पर उचित मुआवजा, आपदा सर्वे एवं नियमानुसार सहायता दिलाने के लिए प्रशासन से समन्वय।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">फसल खराबे पर उचित मुआवजा, आपदा सर्वे एवं नियमानुसार सहायता दिलाने के लिए प्रशासन से समन्वय।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="पशुपालन सुविधाओं में सुधार, पशु चिकित्सा, चारा-पानी एवं सरकारी योजनाओं से जुड़ी समस्याओं का समाधान।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">पशुपालन सुविधाओं में सुधार, पशु चिकित्सा, चारा-पानी एवं सरकारी योजनाओं से जुड़ी समस्याओं का समाधान।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="हर घर नल योजना का सुचारू संचालन एवं स्वच्छ पेयजल की नियमित आपूर्ति।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">हर घर नल योजना का सुचारू संचालन एवं स्वच्छ पेयजल की नियमित आपूर्ति।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="पक्की सड़कें, जल निकासी एवं स्ट्रीट लाइट, सभी वार्डों में बुनियादी सुविधाओं का विकास।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">पक्की सड़कें, जल निकासी एवं स्ट्रीट लाइट, सभी वार्डों में बुनियादी सुविधाओं का विकास।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="प्राथमिक स्वास्थ्य केंद्र (PHC) की बेहतरी एवं नियमित साफ-सफाई की व्यवस्था।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">प्राथमिक स्वास्थ्य केंद्र (PHC) की बेहतरी एवं नियमित साफ-सफाई की व्यवस्था।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="महिलाओं के लिए स्वयं सहायता समूह (SHG) सहायता, ऋण सुविधा एवं कौशल प्रशिक्षण।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">महिलाओं के लिए स्वयं सहायता समूह (SHG) सहायता, ऋण सुविधा एवं कौशल प्रशिक्षण।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="सभी सरकारी कागजी कार्यों के लिए सिंगल विंडो सुविधा — आधार अपडेट, परीक्षा फॉर्म, पेंशन आवेदन, प्रमाण-पत्र एवं अन्य सरकारी प्रक्रियाओं में सहायता।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">सभी सरकारी कागजी कार्यों के लिए सिंगल विंडो सुविधा — आधार अपडेट, परीक्षा फॉर्म, पेंशन आवेदन, प्रमाण-पत्र एवं अन्य सरकारी प्रक्रियाओं में सहायता।</span>
+                    </label>
+                    <label class="concern-label flex items-start gap-3 p-3 rounded-xl border border-slate-100 active:bg-slate-50 hover:bg-slate-50 cursor-pointer transition">
+                        <input type="checkbox" name="entry.812645682" value="फसल खराबे पर उचित मुआवजा, आपदा सर्वे एवं नियमानुसार सहायता दिलाने के लिए प्रशासन से समन्वय।" class="mt-1 w-5 h-5 text-sky-600 rounded border-slate-300 focus:ring-sky-500 flex-shrink-0">
+                        <span class="text-sm text-slate-700">फसल खराबे पर उचित मुआवजा, आपदा सर्वे एवं नियमानुसार सहायता दिलाने के लिए प्रशासन से समन्वय।</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Custom suggestion -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">अन्य सुझाव (Optional)</label>
+                <textarea name="entry.537225318" rows="3" placeholder="अपने वार्ड या मोरक पंचायत से जुड़ा कोई अन्य सुझाव यहाँ लिखें..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none resize-none"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 text-white font-bold py-4 rounded-xl shadow-lg shadow-sky-600/20 transition active:scale-[0.98] flex items-center justify-center gap-2 text-base">
+                <i class="fa-solid fa-paper-plane"></i> सुझाव सबमिट करें
+            </button>
+        </form>
+
+        <!-- Success state — shown after submit, hidden initially -->
+        <div id="successView" class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 text-center hidden">
+            <div class="text-5xl mb-4">🙏</div>
+            <h3 class="text-2xl font-bold text-emerald-700 mb-2">धन्यवाद!</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                आपका अमूल्य सुझाव प्राप्त हो गया है! मोरक के उज्ज्वल भविष्य के लिए धन्यवाद。<br>
+                <strong class="text-slate-800">— अभिषेक श्रृंगी</strong>
+            </p>
+            <button onclick="resetForm()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-4 rounded-xl transition text-base">
+                ↻ दूसरा सुझाव दर्ज करें
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-5 text-center text-xs mt-8 border-t border-slate-800 px-4">
+        <p>निवेदक: समर्थक एवं कार्यकर्ता, कांग्रेस पार्टी — चेचट ग्राम पंचायत चुनाव 2026</p>
+        <p class="mt-1 text-slate-500">© 2026 Abhishek Shringi Campaign. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let submitted = false;
+
+        function onFormSubmit() {
+            submitted = true;
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> सबमिट हो रहा है...';
+        }
+
+        function onIframeLoad() {
+            if (submitted) {
+                document.getElementById('manifestoForm').classList.add('hidden');
+                document.getElementById('successView').classList.remove('hidden');
+                submitted = false;
+            }
+        }
+
+        function resetForm() {
+            const form = document.getElementById('manifestoForm');
+            form.reset();
+            form.classList.remove('hidden');
+            document.getElementById('successView').classList.add('hidden');
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane mr-2"></i> सुझाव सबमिट करें';
+        }
+    </script>
+</body>
+</html>
